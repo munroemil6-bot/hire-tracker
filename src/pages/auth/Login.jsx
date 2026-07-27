@@ -31,7 +31,7 @@ const Login = () => {
             validationErrors.identifier = 'Username or email is required';
         } else if (form.identifier.includes('@') && !emailPattern.test(form.identifier.trim())) {
             validationErrors.identifier = 'Enter a valid email address';
-        }
+        }   
 
         if (!form.password) {
             validationErrors.password = 'Password is required';

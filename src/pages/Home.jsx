@@ -17,16 +17,6 @@ const Home = () => {
                             <Link to="/register" className="btn btn-outline-secondary px-4 py-2">Create Account</Link>
                         </div>
                     </div>
-                    <div className="col-lg-5">
-                        <div className="card border-0 bg-white p-4">
-                            <h5 className="fw-bold mb-3">Why teams love it</h5>
-                            <ul className="list-unstyled mb-0">
-                                <li className="mb-2">✔ Centralized applicant tracking</li>
-                                <li className="mb-2">✔ Clear employee and attendance flow</li>
-                                <li className="mb-2">✔ Professional dashboard experience</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

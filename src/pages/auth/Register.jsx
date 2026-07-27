@@ -141,7 +141,10 @@ const Register = () => {
 
     return (
         <AuthLayout>
-            <h2 className="mb-4 text-2xl font-semibold">Create Account</h2>
+            <div className="d-flex justify-content-between align-items-center mb-4">
+                    <h2 className="mb-0 text-2xl font-semibold">Create Account</h2>
+                    <Link to="/" className="btn btn-sm" style={{ backgroundColor: '#4E0401', color: '#fff', borderColor: '#4E0401' }}>← Home</Link>
+                </div>
             {message && <div className="alert alert-info">{message}</div>}
             <form onSubmit={handleSubmit}>
                 <div className="row g-3 mb-3">

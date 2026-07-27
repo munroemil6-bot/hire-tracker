@@ -85,7 +85,10 @@ const Login = () => {
 
     return (
         <AuthLayout>
-            <h2 className="mb-4 text-2xl font-semibold">Login</h2>
+            <div className="d-flex justify-content-between align-items-center mb-4">
+                    <h2 className="mb-0 text-2xl font-semibold">Login</h2>
+                    <Link to="/" className="btn btn-sm" style={{ backgroundColor: '#4E0401', color: '#fff', borderColor: '#4E0401' }}>← Home</Link>
+                </div>
             {error && <div className="alert alert-danger">{error}</div>}
             <form onSubmit={handleSubmit}>
                 <Input

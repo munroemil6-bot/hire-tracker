@@ -40,11 +40,11 @@ const Dashboard = () => {
         <div className="container-fluid flex-grow-1">
             <div className="row g-4">
                 <div className="col-12">
-                    <div className="card border-0 shadow-sm p-4 bg-primary text-white">
+                    <div className="card border-0 shadow-sm p-4 text-white" style={{ backgroundColor: '#4E0401' }}>
                         <div className="d-flex justify-content-between align-items-start gap-3">
                             <div>
-                                <h2 className="fw-bold mb-2">Welcome back, {user?.name || user?.username || 'Employee'}</h2>
-                                <p className="mb-0 opacity-75">Track your attendance, accomplishments, and updates from one place.</p>
+                                <h2 className="fw-bold mb-2" style={{ color: '#ffffff' }}>Welcome back, {user?.name || user?.username || 'Employee'}</h2>
+                                <p className="mb-0" style={{ color: '#f5c97a' }}>Track your attendance, accomplishments, and updates from one place.</p>
                             </div>
                             <button className="btn btn-outline-light btn-sm" onClick={handleLogout}>Logout</button>
                         </div>
@@ -56,7 +56,7 @@ const Dashboard = () => {
                         <div className="card-body">
                             <div className="d-flex justify-content-between align-items-center mb-3">
                                 <h5 className="card-title fw-bold mb-0">Today’s status</h5>
-                                <Link to="/dashboard/attendance" className="btn btn-outline-primary btn-sm">View attendance</Link>
+                                <Link to="/dashboard/attendance" className="btn btn-sm" style={{ backgroundColor: '#4E0401', color: '#fff', borderColor: '#4E0401' }}>View attendance</Link>
                             </div>
                             <p className="text-muted mb-3">Your latest attendance records are synced below.</p>
                             <div className="d-flex justify-content-between align-items-center">

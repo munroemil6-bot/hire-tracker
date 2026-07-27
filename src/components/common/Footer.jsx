@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
-    <footer className="bg-primary text-white mt-5 py-4">
+    <footer style={{ backgroundColor: '#4E0401' }} className="text-white mt-5 py-4">
         <div className="container-fluid px-4">
             <div className="row g-3 align-items-start">
                 <div className="col-md-4">
